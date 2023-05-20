@@ -30,9 +30,6 @@ def main():
     netD = ResDiscriminator32().to(device)
     netG = Regan_training(ResGenerator32(args.noise_size).to(device), sparsity=args.sparsity)
 
-    real_label = 1.
-    fake_label = 0.
-
     # Setup Adam optimizers for both G and D
     optimizerD = optim.Adam(netD.parameters(), args.lr, (0, 0.9))
     optimizerG = optim.Adam(netG.parameters(), args.lr, (0, 0.9))
@@ -76,7 +73,6 @@ def main():
             netD.zero_grad()
             real_cpu = data[0].to(device)
             b_size = real_cpu.size(0)
-            label = torch.full((b_size,), real_label, dtype=torch.float, device=device)
             output = netD(real_cpu).view(-1)
             errD_real = torch.mean(nn.ReLU(inplace=True)(1.0 - output))
             errD_real.backward()
@@ -85,7 +81,6 @@ def main():
             noise = torch.randn(b_size, args.noise_size, device=device)
             fake = netG(noise)
 
-            label.fill_(fake_label)
             output = netD(fake.detach()).view(-1)
             errD_fake = torch.mean(nn.ReLU(inplace=True)(1 + output))
             errD_fake.backward()
@@ -95,7 +90,6 @@ def main():
 
             if i % args.n_critic == 0:
                 netG.zero_grad()
-                label.fill_(real_label)  # fake labels are real for generator cost
                 noise = torch.randn(b_size, args.noise_size, device=device)
                 fake = netG(noise)
                 output = netD(fake).view(-1)
@@ -105,7 +99,6 @@ def main():
                 if netG.train_on_sparse:
                     netG.apply_masks()
                 optimizerG.step()
-
 
             # Output training stats
             if i % 50 == 0:
