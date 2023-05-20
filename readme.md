@@ -49,7 +49,7 @@ python main.py --epoch 1000 --warmup_epoch 200 --g 100 --sparse 0.3
 ```
 
 ### Citation
-If you find Re-GAN helps your work, please consider cite our paper by following
+If you find Re-GAN helps your work, please consider citing our paper by following
 ```
 BiTex
 ```
