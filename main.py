@@ -106,6 +106,7 @@ def main():
                     netG.apply_masks()
                 optimizerG.step()
 
+
             # Output training stats
             if i % 50 == 0:
                 print('[%d/%d][%d/%d]\tLoss_D: %.4f\tLoss_G: %.4f\tD(x): %.4f\tD(G(z)): %.4f / %.4f'
