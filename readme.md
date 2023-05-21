@@ -46,7 +46,10 @@ To run a Re-SNGAN model, you may follow:
 ```
 git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
 ```
-2. Run your model! One example can be:
+2. Prepare all the required libraries and datasets.
+
+
+3. Run your model! One example can be:
 ```
 python main.py --epoch 1000 --warmup_epoch 200 --g 100 --sparse 0.3 --data_ratio 0.1
 ```
