@@ -7,9 +7,10 @@ For Conda users, you can create a new Conda environment using conda env create -
 4. make one .ipnyb file
 5. think from a very beginner perspective in this field...it should be like s/he can easily run and get the results
 6. How to test the code...?
-7. give pretrained model also and then tell how to use it
-8. give DCGAN experiment...and also give file to draw Figure 2 from the paper
-9. Acknowledgements...to the githubs used as the base
+7. how to get #real image, Flops and training time
+8. give pretrained model also and then tell how to use it
+9. give DCGAN experiment...and also give file to draw Figure 2 from the paper
+10. Acknowledgements...to the githubs used as the base
 
 
 
