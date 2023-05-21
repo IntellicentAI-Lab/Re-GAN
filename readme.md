@@ -1,4 +1,4 @@
-## Re-GAN: Data-Efficient GANs Training via Architectural Reconfiguration
+## Re-GAN: Data-Efficient GANs Training via Architectural Reconfiguration, CVPR 2023
 
 ### Abstract
 
