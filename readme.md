@@ -6,11 +6,18 @@ For Conda users, you can create a new Conda environment using conda env create -
 3. We provide PyTorch implementations...
 4. make one .ipnyb file
 5. think from a very beginner perspective in this field...it should be like s/he can easily run and get the results
-6. How to test the code...?
-7. how to get #real image, Flops and training time
-8. give pretrained model also and then tell how to use it
-9. give DCGAN experiment...and also give file to draw Figure 2 from the paper
-10. Acknowledgements...to the githubs used as the base
+6. what is the main factor for fixing pruning ratio in D and G?
+7. How to test the code...?
+8. How to get 10%, 20% and 50% of data...any code or done manually?
+9. How to compute IS AND FID
+10. how to get #real image, Flops and training time
+11. Code for Figure 7 and 4
+12. give pretrained model also and then tell how to use it
+13. give DCGAN experiment...and also give file to draw Figure 2 from the paper
+14. Show table of results having significant results and also show qualitative results like FFHQ for few-shot....also StyleGAN with both Augmentation
+15. ProGAN and reProGAN for few shot data...still people using ProGAN for lots of purpose...so they give code like now they can explore Re-ProGAN
+16. AutoGAN...all three arch....
+17. Acknowledgements...to the githubs used as the base
 
 
 
