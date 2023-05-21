@@ -14,10 +14,11 @@ For Conda users, you can create a new Conda environment using conda env create -
 11. Code for Figure 7 and 4
 12. give pretrained model also and then tell how to use it
 13. give DCGAN experiment...and also give file to draw Figure 2 from the paper
-14. Show table of results having significant results and also show qualitative results like FFHQ for few-shot....also StyleGAN with both Augmentation
+14. Show table of results having significant results and also show qualitative results like FFHQ for few-shot....
 15. ProGAN and reProGAN for few shot data...still people using ProGAN for lots of purpose...so they give code like now they can explore Re-ProGAN
-16. AutoGAN...all three arch....
-17. Acknowledgements...to the githubs used as the base
+16. give code for AutoGAN...all three arch....
+17. also StyleGAN with both Augmentation
+18. Acknowledgements...to the githubs used as the base
 
 
 
