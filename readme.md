@@ -8,7 +8,7 @@ For Conda users, you can create a new Conda environment using conda env create -
 5. think from a very beginner perspective in this field...it should be like s/he can easily run and get the results
 6. what is the main factor for fixing pruning ratio in D and G?
 7. How to test the code...?
-8. How to get 10%, 20% and 50% of data...any code or done manually?
+8. How to get 10%, 20% and 50% of data...data_ratio...what value to assign....give example
 9. How to compute IS AND FID
 10. how to get #real image, Flops and training time
 11. Code for Figure 7 and 4
