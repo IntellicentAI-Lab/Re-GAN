@@ -12,6 +12,7 @@ Training Generative Adversarial Networks (GANs) on high-fidelity images usually 
 2. Python        (3.8.0)
 3. Pytorch         (1.13.0+cu116)
 4. torchvision         (0.14.0)
+5. numpy (1.23.4)
 
 ### Usage
 
@@ -20,13 +21,15 @@ As our method can be very easily generalized to other GANs, we only provide SNGA
 
 #### Hyper-parameters introduction
 
-| Argument        | Description                                                              |
-|-----------------|--------------------------------------------------------------------------|
-| `epoch`         | Number of total training epochs                                          |
-| `batch_size`    | Batch size of per iteration, choose a proper value by yourselves         |
-| `sparsity`      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned |
-| `g`             | The update interval                                                      |
-| `warmup_epoch`  | Warmup training epochs                                                   |
+| Argument       | Type  | Description                                                              |
+|----------------|-------|--------------------------------------------------------------------------|
+| `epoch`        | int   | Number of total training epochs                                          |
+| `batch_size`   | int   | Batch size of per iteration, choose a proper value by yourselves         |
+| `sparsity`     | float | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned |
+| `g`            | int   | The update interval                                                      |
+| `warmup_epoch` | int   | Warmup training epochs                                                   |
+| `data_ratio`   | float | To simulate a training data limited scenario                             |
+
 
 #### Data Preparation
 Pytorch will download the CIFAR-10 dataset automatically if the dataset is not detected, therefore there is no need to prepare CIFAR-10 dataset.
