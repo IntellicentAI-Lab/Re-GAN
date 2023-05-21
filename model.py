@@ -1,3 +1,4 @@
+# This page taken from https://github.com/w86763777/pytorch-gan-collections/blob/master/source/models/sngan.py
 import math
 
 import torch
