@@ -34,9 +34,9 @@ As our method can be very easily generalized to other GANs, we only provide SNGA
 #### Data Preparation
 Pytorch will download the CIFAR-10 dataset automatically if the dataset is not detected, therefore there is no need to prepare CIFAR-10 dataset.
 
-For Tiny-ImageNet dataset, you may derive it from https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet.
+For Tiny-ImageNet dataset, you may get it from https://www.kaggle.com/datasets/akash2sharma/tiny-imagenet.
 
-For FFHQ dataset, you may derive it from https://github.com/NVlabs/stylegan.
+For FFHQ dataset, you may get it from https://github.com/NVlabs/stylegan.
 
 
 #### Example
