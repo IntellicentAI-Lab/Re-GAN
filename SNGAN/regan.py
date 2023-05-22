@@ -8,10 +8,10 @@ class Regan_training(nn.Module):
         super(Regan_training, self).__init__()
 
         self.model = model
-        self.masks = None
         self.sparsity = sparsity
         self.train_on_sparse = train_on_sparse
         self.layers = []
+        self.masks = []
 
         layers = list(self.model.named_parameters())
 
@@ -23,7 +23,6 @@ class Regan_training(nn.Module):
 
     def reset_masks(self):
 
-        self.masks = []
         for w in self.layers:
             mask_w = torch.ones_like(w, dtype=bool)
             self.masks.append(mask_w)

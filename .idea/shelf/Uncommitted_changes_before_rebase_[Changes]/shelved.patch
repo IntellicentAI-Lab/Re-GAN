@@ -1,0 +1,64 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"3e8537cc-157f-4f9b-bd5b-ff2bbe92d9fc\" name=\"Changes\" comment=\"Delete clear.sh\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"93bd289e-b790-40a5-a8bc-3e27457a277c\" />\n        <option name=\"url\" value=\"https://github.com/XuSingle/ReGAN.git\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2Q3GUz21Sfk2gS0CdFSkux1VzTz\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"true\",\n    \"WebServerToolWindowPanel.toolwindow.highlight.mappings\": \"true\",\n    \"WebServerToolWindowPanel.toolwindow.highlight.symlinks\": \"true\",\n    \"WebServerToolWindowPanel.toolwindow.show.date\": \"false\",\n    \"WebServerToolWindowPanel.toolwindow.show.permissions\": \"false\",\n    \"WebServerToolWindowPanel.toolwindow.show.size\": \"false\",\n    \"last_opened_file_path\": \"/Users/singlexu/Desktop/Pycharm/ReGAN\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"ChangesTree.GroupingKeys\": [\n      \"directory\"\n    ]\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3e8537cc-157f-4f9b-bd5b-ff2bbe92d9fc\" name=\"Changes\" comment=\"\" />\n      <created>1684574870748</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1684574870748</updated>\n      <workItem from=\"1684574871835\" duration=\"1967000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"the first commit\">\n      <created>1684575907640</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1684575907640</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"the second commit\">\n      <created>1684576125760</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1684576125760</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Delete clear.sh\">\n      <created>1684576347861</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1684576347861</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <ignored-roots>\n      <path value=\"$PROJECT_DIR$/..\" />\n    </ignored-roots>\n    <MESSAGE value=\"the first commit\" />\n    <MESSAGE value=\"the second commit\" />\n    <MESSAGE value=\"Delete clear.sh\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Delete clear.sh\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8fa8f129305002c132d0447fa83a1ba46daff869)
++++ b/.idea/workspace.xml	(date 1684578038650)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3e8537cc-157f-4f9b-bd5b-ff2bbe92d9fc" name="Changes" comment="Delete clear.sh" />
++    <list default="true" id="3e8537cc-157f-4f9b-bd5b-ff2bbe92d9fc" name="Changes" comment="Delete run.sh">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -65,7 +68,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1684574870748</updated>
+-      <workItem from="1684574871835" duration="1967000" />
++      <workItem from="1684574871835" duration="2449000" />
+     </task>
+     <task id="LOCAL-00001" summary="the first commit">
+       <created>1684575907640</created>
+@@ -88,7 +91,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1684576347861</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Delete clear.sh">
++      <created>1684576943020</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1684576943020</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Delete run.sh">
++      <created>1684577986548</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1684577986548</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -112,6 +129,7 @@
+     <MESSAGE value="the first commit" />
+     <MESSAGE value="the second commit" />
+     <MESSAGE value="Delete clear.sh" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Delete clear.sh" />
++    <MESSAGE value="Delete run.sh" />
++    <option name="LAST_COMMIT_MESSAGE" value="Delete run.sh" />
+   </component>
+ </project>
+\ No newline at end of file
