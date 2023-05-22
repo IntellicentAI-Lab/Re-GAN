@@ -87,7 +87,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 ### Usage
 
 ---
-As our method can be very easily generalized to other GANs, we only provide SNGAN implementation with CIFAR-10 dataset in this repo.---->Also provide for StyleGAN2 on FFHQ and Few Shot data
+As our method can be very easily generalized to other GANs, we only provide SNGAN and StyleGAN2 implementations in this repo.
 
 #### Hyper-parameters introduction for SNGAN
 
@@ -145,7 +145,7 @@ git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
 python main.py --epoch 1000 --warmup_epoch 200 --g 100 --sparse 0.3 --data_ratio 0.1
 ```
 
-
+---
 
 To run a Re-StyleGAN2 model on few-shot dataset, you may follow:
 1. Clone this repo to your local environment.
