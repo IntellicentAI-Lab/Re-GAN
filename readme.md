@@ -172,15 +172,11 @@ BiTex
 ```
 
 ### Acknowledgment
-We would like to thank the work that helps our paper.
+We would like to thank the work that helps our paper:
 
 1. FID score: https://github.com/bioinf-jku/TTUR.
 2. Inception score: https://github.com/w86763777/pytorch-gan-metrics/blob/master/pytorch_gan_metrics/core.py.
 3. DiffAugmentation: https://github.com/VITA-Group/Ultra-Data-Efficient-GAN-Training.
-
-
-We would like to thank the work that used in our paper but not shown in this repo.
-
-1. AutoGAN: https://github.com/VITA-Group/AutoGAN.
-2. APA: https://github.com/endlesssora/deceived.
+4. AutoGAN: https://github.com/VITA-Group/AutoGAN.
+5. APA: https://github.com/endlesssora/deceived.
 
