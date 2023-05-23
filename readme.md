@@ -1,64 +1,5 @@
 ## Re-GAN: Data-Efficient GANs Training via Architectural Reconfiguration, CVPR 2023
 
-1. ~~give requirement.txt file  and then give instruction like ...For pip users, please type the command pip install -r requirements.txt. For Conda users, you can create a new Conda environment using conda env create -f environment.yml.~~
-
-    <font color="green"> You can see our code does not need to use uncommon libraries or dependencies, everyone who wants to do some interesting work with GANs should know to install Pytorch and Torchvision. And Pytorch is usually not installed through a requirement.txt file, installing it from the official website will be better. </font>
-
-2. ~~Give main image of the paper after abstract~~
-
-    <font color="green"> Done </font>
-3. ~~We provide PyTorch implementations...~~
-
-    <font color="green"> Done </font>
-4. ~~make one .ipnyb file~~
-
-    <font color="green"> Do not know what is this meaning exactly.. </font>
-5. ~~think from a very beginner perspective in this field...it should be like s/he can easily run and get the results~~
-       
-    <font color=Green>Our code cannot be more clear, this is also what I want to do. The reason why I only put a SNGAN implementation is that SNGAN is one of most simple GAN architecture as it do not have much complex components like those in StyleGAN, so reader can very easily clarify what part is our contribution, and which part it belonging to SNGAN implementation itself.</font>
-
-6. ~~what is the main factor for fixing pruning ratio in D and G?~~
-
-    <font color="green"> Do not know what is this meaning exactly, if you want to find where we prune the model, you may refer to regan.py. </font>
-7. ~~How to test the code...?~~
-
-    <font color=green>Please refer to issue 12 </font>
-8. ~~How to get 10%, 20% and 50% of data...data_ratio...what value to assign....give example~~ 
-
-    <font color=green>Done, check data_ratio </font>
-9. ~~How to compute IS AND FID~~
-
-    <font color=green>Done, add them on the acknowledgment part </font>
-10. ~~how to get #real image, Flops and training time~~
-
-    <font color="green"> I think they are trivial to be present in our repo.. #Real image can be calculated by training epoch and batch size, Flops can be calculated by some libraries, training time can be also easily calculated. </font>
-11. ~~Code for Figure 7 and 4~~
-
-    <font color="green"> Do not know what is this meaning exactly, provide the code of how we draw the figure? </font>
-12. ~~give pretrained model also and then tell how to use it~~
-
-    <font color=green> I am afraid we cannot show the pre-trained model in this repo as I reformat the regan.py to make it more readable and clear. Some old methods disappear and some new added. So the model trained based on the old version of regan.py cannot be loaded by the current regan.py. But if you want the pre-trained model for our research, I can give both model and the old version of regan.py which can be successfully run. </font>
-13. ~~give DCGAN experiment...and also give file to draw Figure 2 from the paper~~
-
-    <font color=green>Do not know why we need to show the code of drawing figure, but if you need this code for our own research, I can send it to you.</font>
-14. ~~Show table of results having significant results and also show qualitative results like FFHQ for few-shot....~~
-
-    <font color="green"> Done </font>
-15. ~~ProGAN and reProGAN for few shot data...still people using ProGAN for lots of purpose...so they give code like now they can explore Re-ProGAN~~
-
-    <font color="green"> ProGAN implementation that we used is quite rough, not very suitable for sharing, but if you need it for our own research, I can send it to you. </font>
-16. ~~give code for AutoGAN...all three arch....~~
-
-    <font color=green>I show it on acknowledge part, I think it is not good to show all use models in our repo, it will make our repo messy and complex. </font>
-17. ~~also StyleGAN with both Augmentation~~
-
-    <font color="green"> Done, and I only add Diffaug, APA is very easy to add if needed. </font>
-18. ~~Acknowledgements...to the githubs used as the base~~
-
-    <font color="green">Put them on the codes </font>
-
-
-
 
 ### Abstract
 
@@ -164,7 +105,21 @@ python train.py --size 256 --batch 32 --iter 40000 --dataset panda --eva_iter 20
 --diffaug
 ```
 
+### Evaluation metrics
+
+___
+We conclude how we calculate some used metrics shown in our paper in this section.
+
+| Metrics          | Description                                                                                                                                                        | 
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `#Real images`   | The number of real images that are shown to the discriminator. You can calculate it by training epochs and batch size.                                             | 
+| `FLOPs`          | Floating Point Operations. You can calculate it by using [thop](https://github.com/Lyken17/pytorch-OpCounter) library.                                             |
+| `Training time`  | The total training time. Note that the training time reported in our paper is not included the evaluation time.                                                    |
+| `MSE difference` | The MSE difference. We periodically (per epoch) save an image that contains 64 samples which are generated with fixed noise, then calculated the pixel difference. |
+
 ### Citation
+
+___
 If you use this code for your research, please cite our papers.
 
 ```
@@ -172,10 +127,12 @@ BiTex
 ```
 
 ### Acknowledgment
+
+___
 We would like to thank the work that helps our paper:
 
 1. FID score: https://github.com/bioinf-jku/TTUR.
-2. Inception score: https://github.com/w86763777/pytorch-gan-metrics/blob/master/pytorch_gan_metrics/core.py.
+2. Inception score: https://github.com/w86763777/pytorch-gan-metrics.
 3. DiffAugmentation: https://github.com/VITA-Group/Ultra-Data-Efficient-GAN-Training.
 4. AutoGAN: https://github.com/VITA-Group/AutoGAN.
 5. APA: https://github.com/endlesssora/deceived.
