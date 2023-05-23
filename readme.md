@@ -30,7 +30,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 ---
 As our method can be very easily generalized to other GANs, we only provide SNGAN and StyleGAN2 implementations in this repo.
 
-#### Hyper-parameters introduction for SNGAN
+#### Hyperparameters introduction for SNGAN
 
 | Argument       | Type  | Description                                                              |
 |----------------|-------|--------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ As our method can be very easily generalized to other GANs, we only provide SNGA
 | `data_ratio`   | float | To simulate a training data limited scenario                             |
 
 
-#### Hyper-parameters introduction for StyleGAN2
+#### Hyperparameters introduction for StyleGAN2
 
 | Argument      | Type       | Description                                                                            |
 |---------------|------------|----------------------------------------------------------------------------------------|
