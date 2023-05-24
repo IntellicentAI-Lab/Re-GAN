@@ -95,8 +95,14 @@ git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
 
 3. Run your model! One example can be:
 ```
+# For SNGAN
 python main.py --epoch 1000 --data_ratio 0.1 \
 --regan --warmup_epoch 200 --g 100 --sparse 0.3 
+
+# For ProGAN
+python main.py --data_ratio 0.1 \
+--regan --warmup_epoch 200 --g 100 --sparse 0.3 
+# Please define epoch and batch size in the main.py
 ```
 
 ---
