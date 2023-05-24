@@ -101,7 +101,7 @@ python main.py --epoch 1000 --data_ratio 0.1 \
 
 # For ProGAN
 python main.py --data_ratio 0.1 \
---regan --warmup_epoch 200 --g 100 --sparse 0.3 
+--regan --warmup_epoch 10 --g 10 --sparse 0.3 
 # Please define epoch and batch size in the main.py
 ```
 
