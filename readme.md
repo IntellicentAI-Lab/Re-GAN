@@ -51,6 +51,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 | `g`             | int        | The update interval                                                       |
 | `warmup_epoch`  | int        | Warmup training epochs                                                    |
 | `data_ratio`    | float      | To simulate a training data limited scenario                              |
+
 For batch size of training epochs at each stage of ProGAN, you may define them on the main.py.
 
 #### Hyperparameters introduction for StyleGAN2
