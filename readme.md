@@ -28,8 +28,6 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 ### Usage
 
 ---
-As our method can be very easily generalized to other GANs, we only provide SNGAN and StyleGAN2 implementations in this repo.
-
 
 #### Hyperparameters introduction for SNGAN
 
@@ -43,6 +41,17 @@ As our method can be very easily generalized to other GANs, we only provide SNGA
 | `warmup_epoch`  | int        | Warmup training epochs                                                    |
 | `data_ratio`    | float      | To simulate a training data limited scenario                              |
 
+
+#### Hyperparameters introduction for SNGAN
+
+| Argument        | Type       | Description                                                               |
+|-----------------|------------|---------------------------------------------------------------------------|
+| `regan`         | score true | Enable ReGAN training or not                                              |
+| `sparsity`      | float      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned  |
+| `g`             | int        | The update interval                                                       |
+| `warmup_epoch`  | int        | Warmup training epochs                                                    |
+| `data_ratio`    | float      | To simulate a training data limited scenario                              |
+For batch size of training epochs at each stage of ProGAN, you may define them on the main.py.
 
 #### Hyperparameters introduction for StyleGAN2
 

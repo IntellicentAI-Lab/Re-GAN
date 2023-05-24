@@ -109,7 +109,7 @@ def main():
                 D_G_z2 = output.mean().item()
 
                 # Eliminate weights and their gradients
-                if netG.train_on_sparse:
+                if args.regan and netG.train_on_sparse:
                     netG.apply_masks()
 
                 optimizerG.step()
