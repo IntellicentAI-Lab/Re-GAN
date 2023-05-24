@@ -8,7 +8,6 @@ import torch.utils.data
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
 from model import ResDiscriminator32, ResGenerator32
-from time import time
 from regan import Regan_training
 import numpy as np
 import warnings

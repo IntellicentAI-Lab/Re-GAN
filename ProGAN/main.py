@@ -1,7 +1,7 @@
 import torch.optim as optim
 from model import Discriminator, Generator
 import argparse
-from utils import *
+from utils import get_loader, gradient_penalty
 from regan import Regan_training
 
 

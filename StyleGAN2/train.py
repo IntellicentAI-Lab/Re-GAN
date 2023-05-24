@@ -8,7 +8,6 @@ import argparse
 import math
 import random
 import os
-import numpy as np
 import torch
 from torch import nn, autograd, optim
 from torch.nn import functional as F
@@ -36,7 +35,6 @@ from op import conv2d_gradfix
 from non_leaking import augment, AdaptiveAugment
 from diffaug import DiffAugment
 import warnings
-
 warnings.filterwarnings("ignore")
 
 
