@@ -85,7 +85,8 @@ git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
 
 3. Run your model! One example can be:
 ```
-python main.py --epoch 1000 --warmup_epoch 200 --g 100 --sparse 0.3 --data_ratio 0.1
+python main.py --epoch 1000 --data_ratio 0.1 \
+--regan --warmup_epoch 200 --g 100 --sparse 0.3 
 ```
 
 ---
