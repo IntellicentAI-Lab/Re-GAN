@@ -1,11 +1,11 @@
 import torch.optim as optim
-from progressive_GAN import Discriminator, Generator
+from model import Discriminator, Generator
 import argparse
 from utils import *
 from regan import Regan_training
 
 
-def train_fn(epoch, num_epochs, critic, gen, loader, step, opt_critic, opt_gen):
+def train(epoch, num_epochs, critic, gen, loader, step, opt_critic, opt_gen):
     for batch_idx, (real, _) in enumerate(loader, 0):
 
         alpha = (batch_idx + epoch * len(loader)) / (num_epochs * len(loader))
@@ -113,7 +113,7 @@ def main():
                         print('clean flag')
                         flag_g = 1
 
-            alpha = train_fn(epoch, num_epochs, critic, gen, loader, step, opt_critic, opt_gen)
+            alpha = train(epoch, num_epochs, critic, gen, loader, step, opt_critic, opt_gen)
 
         step += 1  # progress to the next img size
         image_size = 4 * 2 ** step
