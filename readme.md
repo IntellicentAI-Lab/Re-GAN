@@ -30,16 +30,18 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 ---
 As our method can be very easily generalized to other GANs, we only provide SNGAN and StyleGAN2 implementations in this repo.
 
+
 #### Hyperparameters introduction for SNGAN
 
-| Argument       | Type  | Description                                                              |
-|----------------|-------|--------------------------------------------------------------------------|
-| `epoch`        | int   | Number of total training epochs                                          |
-| `batch_size`   | int   | Batch size of per iteration, choose a proper value by yourselves         |
-| `sparsity`     | float | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned |
-| `g`            | int   | The update interval                                                      |
-| `warmup_epoch` | int   | Warmup training epochs                                                   |
-| `data_ratio`   | float | To simulate a training data limited scenario                             |
+| Argument        | Type       | Description                                                               |
+|-----------------|------------|---------------------------------------------------------------------------|
+| `epoch`         | int        | Number of total training epochs                                           |
+| `batch_size`    | int        | Batch size of per iteration, choose a proper value by yourselves          |
+| `regan`         | score true | Enable ReGAN training or not                                              |
+| `sparsity`      | float      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned  |
+| `g`             | int        | The update interval                                                       |
+| `warmup_epoch`  | int        | Warmup training epochs                                                    |
+| `data_ratio`    | float      | To simulate a training data limited scenario                              |
 
 
 #### Hyperparameters introduction for StyleGAN2

@@ -44,39 +44,40 @@ def main():
 
     for epoch in range(1, args.epoch + 1):
 
-        # Warm-up phase, do not enable the ReGAN training
-        if epoch < args.warmup_epoch + 1:
-            print('current is warmup training')
-            netG.train_on_sparse = False
+        if args.regan:
+            # Warm-up phase, do not enable the ReGAN training
+            if epoch < args.warmup_epoch + 1:
+                print('current is warmup training')
+                netG.train_on_sparse = False
 
-        # Warm-up phase finished, get into Sparse training phase
-        elif epoch > args.warmup_epoch and flag_g < args.g + 1:
-            print('epoch %d, current is sparse training' % epoch)
-            # turn training mode to sparse, update mask
-            netG.turn_training_mode(mode='sparse')
-            # make sure the learning rate of sparse phase is the original one
-            if flag_g == 1:
-                print('turn learning rate to normal')
-                for params in optimizerG.param_groups:
-                    params['lr'] = args.lr
-            flag_g = flag_g + 1
+            # Warm-up phase finished, get into Sparse training phase
+            elif epoch > args.warmup_epoch and flag_g < args.g + 1:
+                print('epoch %d, current is sparse training' % epoch)
+                # turn training mode to sparse, update mask
+                netG.turn_training_mode(mode='sparse')
+                # make sure the learning rate of sparse phase is the original one
+                if flag_g == 1:
+                    print('turn learning rate to normal')
+                    for params in optimizerG.param_groups:
+                        params['lr'] = args.lr
+                flag_g = flag_g + 1
 
-        # Sparse training phase finished, get into dense training phase
-        elif epoch > args.warmup_epoch and flag_g < 2 * args.g + 1:
-            print('epoch %d, current is dense training' % epoch)
-            # turn training mode to dense
-            netG.turn_training_mode(mode='dense')
-            # make sure the learning rate of Dense phase is 10 times smaller than the original one
-            if flag_g == args.g + 1:
-                print('turn learning rate to 10 times smaller')
-                for params in optimizerG.param_groups:
-                    params['lr'] = args.lr * 0.1
-            flag_g = flag_g + 1
+            # Sparse training phase finished, get into dense training phase
+            elif epoch > args.warmup_epoch and flag_g < 2 * args.g + 1:
+                print('epoch %d, current is dense training' % epoch)
+                # turn training mode to dense
+                netG.turn_training_mode(mode='dense')
+                # make sure the learning rate of Dense phase is 10 times smaller than the original one
+                if flag_g == args.g + 1:
+                    print('turn learning rate to 10 times smaller')
+                    for params in optimizerG.param_groups:
+                        params['lr'] = args.lr * 0.1
+                flag_g = flag_g + 1
 
-            # When curren Sparse-Dense pair training finished, get into next pair training
-            if flag_g == 2 * args.g + 1:
-                print('clean flag')
-                flag_g = 1
+                # When curren Sparse-Dense pair training finished, get into next pair training
+                if flag_g == 2 * args.g + 1:
+                    print('clean flag')
+                    flag_g = 1
 
         for i, data in enumerate(dataloader, 0):
 
@@ -136,6 +137,7 @@ if __name__ == '__main__':
     argparser.add_argument('--g', type=int, default=5)
     argparser.add_argument('--warmup_epoch', type=int, default=100)
     argparser.add_argument('--data_ratio', type=float, default=1.0)
+    argparser.add_argument('--regan', action="store_true")
     args = argparser.parse_args()
 
     if not os.path.exists(args.dataroot):
