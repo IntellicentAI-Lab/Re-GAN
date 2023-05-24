@@ -85,7 +85,7 @@ Besides, we provide the lmdb data of Few-shot dataset for your convenience, you 
 
 #### Example
 
-To run a Re-SNGAN model, you may follow:
+To run a Re-SNGAN or Re-ProGAN model, you may follow:
 1. Clone this repo to your local environment.
 ```
 git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
