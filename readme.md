@@ -42,7 +42,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 | `data_ratio`    | float      | To simulate a training data limited scenario                              |
 
 
-#### Hyperparameters introduction for SNGAN
+#### Hyperparameters introduction for ProGAN
 
 | Argument        | Type       | Description                                                               |
 |-----------------|------------|---------------------------------------------------------------------------|
