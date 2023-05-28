@@ -142,7 +142,14 @@ ___
 If you use this code for your research, please cite our papers.
 
 ```
-BiTex
+@InProceedings{Saxena_2023_CVPR,
+    author    = {Saxena, Divya and Cao, Jiannong and Xu, Jiahao and Kulshrestha, Tarun},
+    title     = {Re-GAN: Data-Efficient GANs Training via Architectural Reconfiguration},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {16230-16240}
+}
 ```
 
 ### Acknowledgment
