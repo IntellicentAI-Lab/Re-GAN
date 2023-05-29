@@ -15,7 +15,7 @@ Training Generative Adversarial Networks (GANs) on high-fidelity images usually 
 ### Prerequisites
 
 ---
-Our code is implemented with Pytorch, we list the libraries and their version used in our experiments, but other versions should also be worked.
+Our codes were implemented by Pytorch, we list the libraries and their version used in our experiments, but other versions should also be worked.
 1. Linux         (Ubuntu)
 2. Python        (3.8.0)
 3. Pytorch         (1.13.0+cu116)
@@ -35,7 +35,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 |-----------------|------------|---------------------------------------------------------------------------|
 | `epoch`         | int        | Number of total training epochs                                           |
 | `batch_size`    | int        | Batch size of per iteration, choose a proper value by yourselves          |
-| `regan`         | score true | Enable ReGAN training or not                                              |
+| `regan`         | store_true | Enable ReGAN training or not                                              |
 | `sparsity`      | float      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned  |
 | `g`             | int        | The update interval                                                       |
 | `warmup_epoch`  | int        | Warmup training epochs                                                    |
@@ -46,7 +46,7 @@ Our code is implemented with Pytorch, we list the libraries and their version us
 
 | Argument        | Type       | Description                                                               |
 |-----------------|------------|---------------------------------------------------------------------------|
-| `regan`         | score true | Enable ReGAN training or not                                              |
+| `regan`         | store_true | Enable ReGAN training or not                                              |
 | `sparsity`      | float      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned  |
 | `g`             | int        | The update interval                                                       |
 | `warmup_epoch`  | int        | Warmup training epochs                                                    |
@@ -60,11 +60,11 @@ For batch size of training epochs at each stage of ProGAN, you may define them o
 |---------------|------------|----------------------------------------------------------------------------------------|
 | `iter`        | int        | Number of total training iterations                                                    |
 | `batch_size`  | int        | Batch size of per iteration, choose a proper value by yourselves                       |
-| `regan`       | score true | Enable ReGAN training or not                                                           |
+| `regan`       | store_true | Enable ReGAN training or not                                                           |
 | `sparsity`    | float      | Target sparsity k, e.g. sparsity=0.3 means 30% of weights will be pruned               |
 | `g`           | int        | The update interval                                                                    |
 | `warmup_iter` | int        | Warmup training iterations                                                             |
-| `diffaug`     | score true | Enable DiffAug or not                                                                  |
+| `diffaug`     | store_true | Enable DiffAug or not                                                                  |
 | `eva_iter`    | int        | Evaluation frequency                                                                   |
 | `eva_size`    | int        | Evaluation size, for few-shot dataset, we use eva_size=5000                            |
 | `dataset`     | str        | which dataset to use, please make sure you place the dataset dictionary in right place |
@@ -162,5 +162,8 @@ We would like to thank the work that helps our paper:
 3. DiffAugmentation: https://github.com/VITA-Group/Ultra-Data-Efficient-GAN-Training.
 4. AutoGAN: https://github.com/VITA-Group/AutoGAN.
 5. APA: https://github.com/endlesssora/deceived.
+6. SNGAN: https://github.com/w86763777/pytorch-gan-collections.
+7. ProGAN: https://github.com/BakingBrains/Progressive_GAN-ProGAN-_implementation.
+8. StyleGAN2: https://github.com/rosinality/stylegan2-pytorch.
 
 

@@ -1,3 +1,4 @@
+# Codes taken from https://github.com/BakingBrains/Progressive_GAN-ProGAN-_implementation.
 import torch
 from torch import nn
 from torch.nn import functional as F
