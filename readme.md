@@ -13,7 +13,7 @@ Training Generative Adversarial Networks (GANs) on high-fidelity images usually 
 ![Table5](./figures/Table5.png "Table5")
 
 ### Prerequisites
-
+Should you have any questions about this repo, feel free to contact Jiahao Xu @ jiahxu@polyu.edu.hk
 ---
 Our codes were implemented by Pytorch, we list the libraries and their version used in our experiments, but other versions should also be worked.
 1. Linux         (Ubuntu)
