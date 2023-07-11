@@ -28,7 +28,7 @@ Our codes were implemented by Pytorch, we list the libraries and their version u
 ### Usage
 
 ---
-Should you have any questions about this repo, feel free to contact Jiahao Xu @ jiahxu@polyu.edu.hk
+Should you have any questions about using this repo, feel free to contact Jiahao Xu @ jiahxu@polyu.edu.hk
 
 #### Hyperparameters introduction for SNGAN
 
