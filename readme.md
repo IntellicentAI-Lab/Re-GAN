@@ -72,6 +72,8 @@ For batch size of training epochs at each stage of ProGAN, you may define them o
 | `size`        | int        | Size of training image, for few-shot dataset, size=256                                 |
 | `ckpt`        | str        | If you want to resume your training, you can use this argument                         |
 
+#### Hyperparameters introduction for AutoGAN
+Please refer to [AutoGAN](https://github.com/VITA-Group/AutoGAN) project website for getting detailed explanation.
 
 #### Data Preparation
 Pytorch will download the CIFAR-10 dataset automatically if the dataset is not detected, therefore there is no need to prepare CIFAR-10 dataset.
