@@ -59,9 +59,8 @@ class ImageDataset(object):
 
             self.test = self.valid
         else:
-            import numpy as np
-            self.train = torch.utils.data.DataLoader(
-                torch.utils.data.Subset(Dt(root=args.data_path, train=True, transform=transform, download=True), np.arange(int(5000))),
+            # import numpy as np
+            self.train = torch.utils.data.DataLoader(Dt(root=args.data_path, train=True, transform=transform, download=True),
                 batch_size=args.dis_batch_size,
                 shuffle=True,
                 num_workers=args.num_workers,

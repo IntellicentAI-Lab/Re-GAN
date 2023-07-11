@@ -3,6 +3,7 @@
 # @Author  : Xinyu Gong (xy_gong@tamu.edu)
 # @Link    : None
 # @Version : 0.0
+# Modified by Jiahao Xu (jiahxu@polyu.edu.hk)
 
 from __future__ import absolute_import, division, print_function
 
@@ -23,6 +24,7 @@ from functions import copy_params, LinearLrDecay, load_params, train, validate
 # from utils.fid_score import check_or_download_inception, create_inception_graph
 # from utils.inception_score import _init_inception
 from utils.utils import create_logger, save_checkpoint, set_log_dir
+
 
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark = True
