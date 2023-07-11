@@ -14,7 +14,6 @@ Training Generative Adversarial Networks (GANs) on high-fidelity images usually 
 
 ### Prerequisites
 ---
-Should you have any questions about this repo, feel free to contact Jiahao Xu @ jiahxu@polyu.edu.hk
 
 Our codes were implemented by Pytorch, we list the libraries and their version used in our experiments, but other versions should also be worked.
 1. Linux         (Ubuntu)
@@ -29,6 +28,7 @@ Our codes were implemented by Pytorch, we list the libraries and their version u
 ### Usage
 
 ---
+Should you have any questions about this repo, feel free to contact Jiahao Xu @ jiahxu@polyu.edu.hk
 
 #### Hyperparameters introduction for SNGAN
 
@@ -122,7 +122,7 @@ git clone https://github.com/IntellicentAI-Lab/Re-GAN.git
 ```
 python train.py --size 256 --batch 32 --iter 40000 --dataset panda --eva_iter 2000 --eva_size 100 \
 --regan --warmup_iter 10000 --g 5000 --sparsity 0.3 \
---diffaug
+--diffaug # Indicate it if you want to use DiffAugmentation
 ```
 
 ### Evaluation metrics
@@ -136,6 +136,8 @@ We conclude how we calculate some used metrics shown in our paper in this sectio
 | `FLOPs`          | Floating Point Operations. You can calculate it by using [thop](https://github.com/Lyken17/pytorch-OpCounter) library.                                             |
 | `Training time`  | The total training time. Note that the training time reported in our paper is not included the evaluation time.                                                    |
 | `MSE difference` | The MSE difference. We periodically (per epoch) save an image that contains 64 samples which are generated with fixed noise, then calculated the pixel difference. |
+
+We provide some codes on quantitative evaluation, you can check the StyleGAN folder and see lines 347 to 379 on the train.py to learn how to evaluate FID. Calculating IS is a very similar process.
 
 ### Citation
 
